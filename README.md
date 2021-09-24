@@ -12,5 +12,5 @@ The service should allow you to set an expiry for content so that it self destru
 This project was built using .NET Core. To run it the system must have .Net Core SDK 3.1 or above.
 
 ## A Pull Request
-Since this application will be shipped to production it is a good idea that a co developer review the code before merging to master.
+Since this application will be shipped to production it is a good idea that a co developer reviews the code before merging to master.
 For the above reason a Pull Request has been created with the link https://github.com/Ekeh/carbon-short-url/compare/short-url?expand=1
