@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarbonPlatformExercise.Data\CarbonPlatformExercise.Data.csproj" />
+    <ProjectReference Include="..\CarbonPlatformExercise.Repository\CarbonPlatformExercise.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

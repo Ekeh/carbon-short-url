@@ -1,0 +1,11 @@
+﻿@model CarbonPlatformExercise.Data.Book
+@{
+    ViewData["Title"] = "Home Page";
+}
+    <h1>@ViewData["Title"]</h1>
+
+    <div class="container">
+        <a asp-action="Index">Back</a>
+        <p>@Model.Text</p>
+        <p>@Model.Expiry</p>
+    </div>
