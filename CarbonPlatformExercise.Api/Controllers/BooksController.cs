@@ -74,7 +74,7 @@ namespace CarbonPlatformExercise.Api.Controllers
                 Expiry = model.Expiry
             };
            var result = await _bookService.InsertBook(book);
-            var callbackUrl = $"{HttpContext.Request.Scheme}://{Request.Host.Value}/{result.Url}";
+            var callbackUrl = $"{HttpContext?.Request?.Scheme}://{Request?.Host.Value}/{result?.Url}";
             response.Data = callbackUrl;
             return Ok(response);
         }

@@ -24,5 +24,15 @@ namespace CarbonPlatformExercise.Test
             var result = await booksController.GetAll();
             Assert.Equal("Microsoft.AspNetCore.Mvc.OkObjectResult", result.ToString());
         }
+
+        [Fact]
+        public async Task CreateBookTestAsync()
+        {
+            mockBook.Setup(p => p.InsertBook(new Book { Text = "This is a book", Expiry = DateTime.Now })).ReturnsAsync(new Book { Text = "This is a book", Expiry = DateTime.Now });
+            mockShortCode.Setup(p => p.GenerateUrlCode(8)).ReturnsAsync("ABCEDF");
+            BooksController booksController = new BooksController(mockBook.Object, mockShortCode.Object);
+            var result = await booksController.Create(new Api.Dto.BookDto { Text = "This is a book", Expiry = DateTime.Now});
+            Assert.Equal("Microsoft.AspNetCore.Mvc.OkObjectResult", result.ToString());
+        }
     }
 }
