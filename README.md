@@ -1,5 +1,5 @@
 # Carbon Finance &amp; Investments Limited Books 
-This repository is an assessment from Carbon Finance &amp; Investments Limited.
+This repository is an assessment from [Carbon Finance &amp; Investments Limited](https://ng.getcarbon.co/).
 
 ## The Problem
 You work for a very big legal company with about 50,000 employees globally that is very serious on privacy and non disclosure and intellectual property protection. Lawyers on different teams usually share a lot of memos and snippets of old cases and reports. A member of the team discovers https://pastebin.com/ but due to concerns on violating the company’s privacy policy decides against using it. Instead they come to you to build something similar for use within the company.
